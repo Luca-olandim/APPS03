@@ -7,7 +7,7 @@ const FormDestino = ({ adicionarDestino }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    adicionarDestino({ nome, descricao, distacia });
+    adicionarDestino({ nome, descricao, distancia });
     setNome('');
     setDescricao('');
     setDistancia('');
