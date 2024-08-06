@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormDestino from "../destino/FormDestino";
-import Destino from "../destino/Destino";
+import Destino, { calcularCustos } from "../destino/Destino";
+import { useEffect } from "react";
 
 
 
@@ -16,8 +17,12 @@ const Destinos = () => {
         { nome: 'Cairo', descricao: 'A maior cidade do mundo árabe.', distancia: 10263 },
         { nome: 'Moscou', descricao: 'A capital da Rússia.', distancia: 11795 },
         { nome: 'Pequim', descricao: 'A capital da China.', distancia: 17856 }
+        
     ]);
-  
+
+
+    
+
     const adicionarDestino = (novoDestino) => {
       setDestinos([...destinos, novoDestino]);
     };
